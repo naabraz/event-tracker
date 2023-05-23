@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { RecoilRoot } from 'recoil';
 
 import style from './App.module.scss';
@@ -67,16 +67,16 @@ function App() {
           </Card>
           <hr />
           <Card>
-            {/* <ListaDeEventos
+            <ListaDeEventos
               aoFiltroAplicado={aplicarFiltro}
               aoAlterarStatus={alterarStatusEvento}
               aoDeletarEvento={deletarEvento}
               // eventos={filtrados}
-            /> */}
+            />
           </Card>
         </div>
         <div className={style.Coluna}>
-          {/* <Calendario eventos={eventos} /> */}
+          <Calendario />
         </div>
       </div>
     </RecoilRoot>
